@@ -1,0 +1,7 @@
+1. Created the repository in https://github.com/Jorge-Monge/
+2. $>echo "# Javascript_From_Beginner_to_Expert" >> README.md
+3. $>git init
+4. $>git add README.md
+5. $>git commit -m "first commit"
+6. $>git remote add origin https://github.com/Jorge-Monge/Javascript_From_Beginner_to_Expert.git
+7. $>git push -u origin master
