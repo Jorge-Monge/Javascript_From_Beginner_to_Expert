@@ -7,6 +7,9 @@
 7. $>git push -u origin master
 
 // Clone from the remote repository.
-// (For instance, when we are produding new content in a different
+// (For instance, when we are producing new content on a different
 // computer than the one we normally work on.)
 $>git clone https://github.com/Jorge-Monge/Javascript_From_Beginner_to_Expert.git
+
+// We are in a local GIT repository, but need to pull changes from the remote:
+$>git pull origin master
