@@ -1,0 +1,18 @@
+﻿#toTopButton {
+    background-color: teal;
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    /*No matter how much we scroll, the
+    'div' element will always be in the same
+    position.
+    */
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    display: none;
+}
+
+#toTopButton:hover {
+    color: red;
+}
