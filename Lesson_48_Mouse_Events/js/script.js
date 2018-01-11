@@ -10,19 +10,24 @@
  *  - onmouseup - when we release the mouse button
  */
 
+function movingImage(e, objToMove) {
+
+    objToMove.style.left = e.clientX - objToMove.width / 2 + "px";
+    objToMove.style.top = e.clientY - objToMove.height / 2 + "px";
+};
 
 window.onload = function () {
     var sample = document.getElementById("sample");
     sample.onmousedown = function () {
-        this.onmousemove = function (e) {
-            this.style.left = e.clientX -this.width/2 + "px";
-            this.style.top = e.clientY -this.height/2 + "px";
-        };
-        this.onmou
+
+        var self = this;
+        document.onmousemove = function (e) {
+            movingImage(e, self);
+        }
     };
 
-    sample.onmouseup = function (e) {
-        sample.onmousemove = null;
+    sample.onmouseup = function () {
+        document.onmousemove = null;
     };
 
     sample.ondragstart = function (e) {
